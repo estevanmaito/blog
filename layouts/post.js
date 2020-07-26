@@ -1,5 +1,12 @@
+import Nav from '@/components/nav'
+
 export default function Post(frontMatter) {
   return ({ children: content }) => {
-    return <div className="mx-auto prose">{content}</div>
+    return (
+      <>
+        <Nav />
+        <div className="mx-auto my-10 prose">{content}</div>
+      </>
+    )
   }
 }
