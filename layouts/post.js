@@ -1,4 +1,4 @@
-import Nav from '@/components/nav'
+import Nav from '@/components/Nav'
 
 export default function Post(frontMatter) {
   return ({ children: content }) => {
