@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "prebuild": "node utils/social-image.js",
+    "prebuild": "node utils/social-image.js && node utils/sitemap.js",
     "build": "next build",
     "start": "next start"
   },
@@ -22,6 +22,7 @@
   },
   "devDependencies": {
     "chalk": "4.1.0",
+    "nextjs-sitemap-generator": "1.0.0",
     "puppeteer": "5.2.1"
   }
 }
