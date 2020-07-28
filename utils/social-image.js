@@ -3,7 +3,6 @@ const path = require('path')
 const readline = require('readline')
 const renderSocialImage = require('puppeteer-social-image').default
 const chalk = require('chalk')
-const socialLogo = require('./social-logo')
 
 // grab all .md files from pages/blog
 // grab all images inside public/social (this is where we will be saving our social images)
@@ -110,7 +109,6 @@ function generateSocialImages(posts) {
         template: 'basic',
         templateParams: {
           title: postTitle,
-          logo: socialLogo,
           color: 'black',
         },
         output: IMAGES_DIR + '/' + postFileName + '.png',
