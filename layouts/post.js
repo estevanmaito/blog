@@ -1,5 +1,6 @@
 import Nav from '@/components/Nav'
 import SEO from '@/components/SEO'
+import formatDate from '@/utils/format-date'
 
 function formatPath(path, replace = '') {
   return path.replace(/\.md$/, replace)
@@ -12,6 +13,7 @@ export default function Post(frontMatter) {
       frontMatter.__resourcePath,
       '.png'
     ).replace('blog', 'social')}`
+
     return (
       <>
         <SEO
@@ -47,7 +49,15 @@ export default function Post(frontMatter) {
           ></script>
         </SEO>
         <Nav />
-        <div className="mx-auto my-10 prose">{content}</div>
+
+        <div className="max-w-2xl px-4 mx-auto mt-10 prose">{content}</div>
+        <div className="max-w-2xl px-4 mx-auto mt-10 mb-10 text-sm text-gray-700">
+          <div className="inline-flex">
+            <img className="object-cover w-6 h-6 mr-2 rounded-full" src="/img/me.png" alt="" />
+            <span>Estevan Maito</span>
+            <span className="ml-6">{formatDate(frontMatter.datePublished)}</span>
+          </div>
+        </div>
       </>
     )
   }
