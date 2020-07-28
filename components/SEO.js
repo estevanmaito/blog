@@ -20,6 +20,7 @@ function SEO(props) {
       <meta property="og:image" content={image} />
 
       <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:creator" content="@estevanmaito" />
 
       <title>{title}</title>
       {children}
