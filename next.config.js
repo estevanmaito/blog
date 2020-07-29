@@ -6,6 +6,7 @@ module.exports = withMdxEnhanced({
   rehypePlugins: [
     require('rehype-slug'),
     [require('rehype-autolink-headings'), { behavior: 'wrap' }],
+    require('@mapbox/rehype-prism'),
   ],
   extendFrontMatter: {
     process: (mdxContent, frontMatter) => {},
