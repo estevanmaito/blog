@@ -1,10 +1,6 @@
 import Nav from '@/components/Nav'
 import SEO from '@/components/SEO'
-import formatDate from '@/utils/format-date'
-
-function formatPath(path, replace = '') {
-  return path.replace(/\.md$/, replace)
-}
+import { formatDate, formatPath } from '@/utils/format'
 
 export default function Post(frontMatter) {
   return ({ children: content }) => {
