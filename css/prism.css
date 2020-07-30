@@ -93,7 +93,7 @@ code[class*='language-'] {
 .token.atrule,
 .token.attr-value,
 .token.keyword {
-  color: deeppink;
+  color: #ff6bba;
 }
 
 .token.regex,

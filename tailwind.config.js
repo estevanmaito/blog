@@ -1,7 +1,7 @@
 const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
-  purge: ['./pages/**/*.{js,mdx}', './components/**/*.js'],
+  purge: ['./pages/**/*.{js,md}', './components/**/*.js', './layouts/**/*.js'],
   theme: {
     extend: {},
     typography: {
@@ -18,6 +18,8 @@ module.exports = {
             display: 'inline-block',
             lineHeight: defaultTheme.lineHeight['snug'],
           },
+          pre: { color: null, backgroundColor: null },
+          'pre code': { color: 'white', backgroundColor: 'black' },
           'code::before': {
             content: 'none',
           },
@@ -29,6 +31,18 @@ module.exports = {
           },
           'pre code::after': {
             content: 'none',
+          },
+          '> ul > li > *:first-child': {
+            marginTop: 'auto',
+          },
+          '> ul > li > *:last-child': {
+            marginBottom: 'auto',
+          },
+          '> ol > li > *:first-child': {
+            marginTop: 'auto',
+          },
+          '> ol > li > *:last-child': {
+            marginBottom: 'auto',
           },
         },
       },
