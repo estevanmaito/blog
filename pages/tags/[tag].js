@@ -1,26 +1,29 @@
 import React from 'react'
-import Link from 'next/link'
+import Nav from '@/components/Nav'
 import { getTags, getPostsByTag } from '@/api/index'
-
-function formatPath(path) {
-  return path.replace(/\.md$/, '')
-}
+import PostsList from '@/components/PostsList'
+import SEO from '@/components/SEO'
 
 function Tag(props) {
   const { posts, tag } = props
+  const results = posts.length !== 1 ? `${posts.length} posts found` : '1 post found'
+
+  const title = `Tag: ${tag} - Estevan Maito`
+  const description = `A list of all the posts written for ${tag}`
+  const canonical = `https://estevanmaito.me/tags/${tag}`
+  const image = 'https://estevanmaito.me/social-image.png'
+
   return (
     <>
-      <h1>Tag: {tag}</h1>
-      <p>{posts.length} posts found</p>
-      <div>
-        {posts.map((post) => (
-          <Link href={`/${formatPath(post.__resourcePath)}`}>
-            <a>
-              <p key={post.title}>{post.title}</p>
-            </a>
-          </Link>
-        ))}
-      </div>
+      <SEO title={title} description={description} canonical={canonical} image={image}></SEO>
+      <Nav />
+      <main className="max-w-2xl px-4 mx-auto my-10">
+        <h1 className="mb-4 text-4xl font-extrabold leading-tight text-gray-900">Tag: {tag}</h1>
+        <p>{results}</p>
+        <div className="mt-8">
+          <PostsList posts={posts} />
+        </div>
+      </main>
     </>
   )
 }
