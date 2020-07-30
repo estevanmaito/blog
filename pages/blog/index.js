@@ -16,8 +16,8 @@ function Blog() {
   const image = 'https://estevanmaito.me/social-image.png'
 
   const sortedPosts = posts.sort((a, b) => {
-    if (a.datePublished < b.datePublished) return -1
-    if (a.datePublished > b.datePublished) return 1
+    if (a.datePublished > b.datePublished) return -1
+    if (a.datePublished < b.datePublished) return 1
     return 0
   })
 
