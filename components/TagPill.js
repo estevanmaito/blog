@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 function TagPill({ tag }) {
   return (
-    <span className="inline-block text-sm">
+    <span className="inline-block text-sm hover:font-semibold">
       <Link href={`/tags/${tag}`}>
         <a>#{tag}</a>
       </Link>
