@@ -15,16 +15,27 @@ function PostsList({ posts }) {
       {sortedPosts.map((post) => (
         <div key={formatPath(post.__resourcePath)}>
           <Link href={`/${formatPath(post.__resourcePath)}`}>
-            <a className="block mb-2">
-              <span className="text-sm text-gray-700">{formatDate(post.datePublished)}</span>
-              <h2 className="text-xl font-bold leading-6 text-gray-900">{post.title}</h2>
+            <a className="flex items-start justify-between px-4 py-2 mb-2 -mx-4 space-x-4 transition-colors duration-100 ease-in-out rounded-md hover:bg-gray-50">
+              <div>
+                <span className="block text-sm text-gray-700 md:hidden">
+                  {formatDate(post.datePublished)}
+                </span>
+                <h2 className="text-xl font-bold leading-tight tracking-tight text-gray-900">
+                  {post.title}
+                </h2>
+                <div className="inline-block space-x-4 text-gray-700">
+                  {post.tags.map((tag) => (
+                    <TagPill tag={tag} key={tag} />
+                  ))}
+                </div>
+              </div>
+              <div className="flex-shrink-0">
+                <span className="hidden text-sm text-gray-700 md:block">
+                  {formatDate(post.datePublished)}
+                </span>
+              </div>
             </a>
           </Link>
-          <div className="space-x-4">
-            {post.tags.map((tag) => (
-              <TagPill tag={tag} key={tag} />
-            ))}
-          </div>
         </div>
       ))}
     </div>
