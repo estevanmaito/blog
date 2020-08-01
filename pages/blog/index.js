@@ -39,7 +39,7 @@ function Blog() {
         ></script>
       </SEO>
       <Nav />
-      <main className="max-w-2xl px-4 mx-auto my-10">
+      <main className="max-w-2xl px-4 mx-auto my-10 xs:px-8 lg:max-w-5xl">
         <h1 className="mb-8 text-4xl font-extrabold leading-tight text-gray-900">Blog</h1>
         <PostsList posts={posts} />
       </main>
