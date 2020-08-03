@@ -1,15 +1,14 @@
-/* PrismJS 1.20.0
-https://prismjs.com/download.html#themes=prism-funky&languages=markup+css+clike+javascript+bash+markdown+jsx+yaml */
 /**
- * prism.js Funky theme
- * Based on “Polyfilling the gaps” talk slides http://lea.verou.me/polyfilling-the-gaps/
- * @author Lea Verou
+ * a11y-dark theme for JavaScript, CSS, and HTML
+ * Based on the okaidia theme: https://github.com/PrismJS/prism/blob/gh-pages/themes/prism-okaidia.css
+ * @author ericwbailey
  */
 
 code[class*='language-'],
 pre[class*='language-'] {
+  color: #f8f8f2;
+  background: none;
   font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
-  font-size: 1em;
   text-align: left;
   white-space: pre;
   word-spacing: normal;
@@ -17,9 +16,9 @@ pre[class*='language-'] {
   word-wrap: normal;
   line-height: 1.5;
 
-  -moz-tab-size: 2;
-  -o-tab-size: 2;
-  tab-size: 2;
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
 
   -webkit-hyphens: none;
   -moz-hyphens: none;
@@ -29,23 +28,21 @@ pre[class*='language-'] {
 
 /* Code blocks */
 pre[class*='language-'] {
-  padding: 0.4em 0.8em;
+  padding: 1em;
   margin: 0.5em 0;
   overflow: auto;
-  background: black;
-  background-size: 1em 1em;
+  border-radius: 0.3em;
 }
 
-code[class*='language-'] {
-  background: black;
-  color: white;
+:not(pre) > code[class*='language-'],
+pre[class*='language-'] {
+  background: #2e3440;
 }
 
 /* Inline code */
 :not(pre) > code[class*='language-'] {
-  padding: 0.2em;
+  padding: 0.1em;
   border-radius: 0.3em;
-  box-shadow: none;
   white-space: normal;
 }
 
@@ -53,58 +50,64 @@ code[class*='language-'] {
 .token.prolog,
 .token.doctype,
 .token.cdata {
-  color: #aaa;
+  color: #a6a6a6;
 }
 
 .token.punctuation {
-  color: #999;
-}
-
-.token.namespace {
-  opacity: 0.7;
+  color: #fefefe;
 }
 
 .token.property,
 .token.tag,
-.token.boolean,
-.token.number,
 .token.constant,
-.token.symbol {
-  color: #0cf;
+.token.symbol,
+.token.deleted {
+  color: #ffa07a;
+}
+
+.token.boolean,
+.token.number {
+  color: #00e0e0;
 }
 
 .token.selector,
 .token.attr-name,
 .token.string,
 .token.char,
-.token.builtin {
-  color: yellow;
+.token.builtin,
+.token.inserted {
+  color: #abe338;
 }
 
 .token.operator,
 .token.entity,
 .token.url,
 .language-css .token.string,
-.token.variable,
-.token.inserted {
-  color: yellowgreen;
+.style .token.string,
+.token.variable {
+  color: #00e0e0;
 }
 
 .token.atrule,
 .token.attr-value,
+.token.function {
+  color: #ffd700;
+}
+
 .token.keyword {
-  color: #ff6bba;
+  color: #00e0e0;
 }
 
 .token.regex,
 .token.important {
-  color: orange;
+  color: #ffd700;
 }
 
 .token.important,
 .token.bold {
   font-weight: bold;
 }
+
 .token.italic {
   font-style: italic;
 }
@@ -113,19 +116,46 @@ code[class*='language-'] {
   cursor: help;
 }
 
-.token.deleted {
-  color: red;
-}
+@media screen and (-ms-high-contrast: active) {
+  code[class*='language-'],
+  pre[class*='language-'] {
+    color: windowText;
+    background: window;
+  }
 
-/* Plugin styles: Diff Highlight */
-pre.diff-highlight.diff-highlight > code .token.deleted:not(.prefix),
-pre > code.diff-highlight.diff-highlight .token.deleted:not(.prefix) {
-  background-color: rgba(255, 0, 0, 0.3);
-  display: inline;
-}
+  :not(pre) > code[class*='language-'],
+  pre[class*='language-'] {
+    background: window;
+  }
 
-pre.diff-highlight.diff-highlight > code .token.inserted:not(.prefix),
-pre > code.diff-highlight.diff-highlight .token.inserted:not(.prefix) {
-  background-color: rgba(0, 255, 128, 0.3);
-  display: inline;
+  .token.important {
+    background: highlight;
+    color: window;
+    font-weight: normal;
+  }
+
+  .token.atrule,
+  .token.attr-value,
+  .token.function,
+  .token.keyword,
+  .token.operator,
+  .token.selector {
+    font-weight: bold;
+  }
+
+  .token.attr-value,
+  .token.comment,
+  .token.doctype,
+  .token.function,
+  .token.keyword,
+  .token.operator,
+  .token.property,
+  .token.string {
+    color: highlight;
+  }
+
+  .token.attr-value,
+  .token.url {
+    font-weight: normal;
+  }
 }

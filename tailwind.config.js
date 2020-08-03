@@ -146,6 +146,9 @@ module.exports = {
       screens: {
         xs: '540px',
       },
+      borderRadius: {
+        xl: '1rem',
+      },
       fontFamily: {
         sans: ['Open sans', ...defaultTheme.fontFamily.sans],
       },
@@ -156,7 +159,10 @@ module.exports = {
           'h1 > a, h2 > a, h3 > a, h4 > a': {
             textDecoration: 'none',
           },
-          code: {
+          // code: false,
+          ':not(pre) code': {
+            color: defaultTheme.colors.gray[900],
+            fontWeight: '600',
             backgroundColor: defaultTheme.colors.gray[200],
             borderRadius: defaultTheme.borderRadius.default,
             paddingLeft: defaultTheme.spacing[1],
@@ -164,8 +170,8 @@ module.exports = {
             display: 'inline-block',
             lineHeight: defaultTheme.lineHeight['snug'],
           },
-          pre: { color: null, backgroundColor: null },
-          'pre code': { color: 'white', backgroundColor: 'black' },
+          // pre: { color: null, backgroundColor: null },
+          // 'pre code': { color: '#f8f8f2', backgroundColor: '#2e3440' },
           'code::before': {
             content: 'none',
           },
