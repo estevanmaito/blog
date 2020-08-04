@@ -165,7 +165,8 @@ export default function About() {
           </li>
           <li>Travis CI</li>
           <li>
-            I've also worked in the past with: Vue, Gatsby, Redux, SQL Server, Angular, Firebase
+            I've also worked in the past with: Vue, Styled Components, Gatsby, Redux, SQL Server,
+            Angular, Firebase
           </li>
           <li>
             Can communicate with <strong>designers</strong>
