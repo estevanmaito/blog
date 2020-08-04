@@ -43,7 +43,7 @@ export default function About() {
       <main className="max-w-2xl px-4 mx-auto my-10 prose xs:px-8 lg:max-w-3xl">
         <h1>About me</h1>
         <p>
-          I'm Estevan Maito, full stack developer with 7 years of experience currently looking for
+          I'm Estevan Maito, full stack developer with 6 years of experience currently looking for
           new projects. I'm currently living in Brazil (GMT-3). I changed careers in 2013, going
           from International Business to self-taught developer.
         </p>
