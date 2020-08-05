@@ -83,72 +83,82 @@ export default function Home() {
       </header>
 
       <main className="max-w-2xl px-4 mx-auto my-10 xs:px-8 lg:max-w-5xl">
-        <section className="mb-10">
-          <h2 className="mb-4 text-2xl font-bold text-gray-800" id="projects">
+        <section className="mb-16">
+          <h2 className="mb-6 text-2xl font-bold text-gray-800" id="projects">
             Projects
           </h2>
 
           <div className="grid grid-cols-3 gap-16">
-            <div className="p-2 text-sm text-gray-700 rounded-lg shadow-xs">
-              <img
-                className="mb-4 rounded-md shadow-xs"
-                src="img/projects/windmill-react-ui.png"
-                alt=""
-              />
-              <h3 className="mb-2 text-base font-semibold">Windmill React UI</h3>
-              <p className="mb-1">
-                The component library for fast and accessible development of gorgeous interfaces.
-              </p>
+            <div className="flex flex-col justify-between p-2 text-sm text-gray-700 rounded-lg shadow-xs">
+              <div>
+                <img
+                  className="mb-4 rounded-md shadow-xs"
+                  src="img/projects/windmill-react-ui.png"
+                  alt=""
+                />
+                <h3 className="mb-2 text-base font-semibold">Windmill React UI</h3>
+                <p className="mb-1">
+                  The component library for fast and accessible development of gorgeous interfaces.
+                </p>
+              </div>
               <a className="underline" href="https://windmillui.com/react-ui">
                 Visit
               </a>
             </div>
-            <div className="p-2 text-sm text-gray-700 rounded-lg shadow-xs">
-              <img
-                className="mb-4 rounded-md shadow-xs"
-                src="img/projects/windmill-dashboard-react.png"
-                alt=""
-              />
-              <h3 className="mb-2 text-base font-semibold">Windmill Dashboard React</h3>
-              <p className="mb-1">Four 100 scores and PWA ready. Just connect your data.</p>
+            <div className="flex flex-col justify-between p-2 text-sm text-gray-700 rounded-lg shadow-xs">
+              <div>
+                <img
+                  className="mb-4 rounded-md shadow-xs"
+                  src="img/projects/windmill-dashboard-react.png"
+                  alt=""
+                />
+                <h3 className="mb-2 text-base font-semibold">Windmill Dashboard React</h3>
+                <p className="mb-1">Four 100 scores and PWA ready. Just connect your data.</p>
+              </div>
               <a className="underline" href="https://windmillui.com/dashboard-react">
                 Visit
               </a>
             </div>
-            <div className="p-2 text-sm text-gray-700 rounded-lg shadow-xs">
-              <img
-                className="mb-4 rounded-md shadow-xs"
-                src="img/projects/windmill-dashboard-html.png"
-                alt=""
-              />
-              <h3 className="mb-2 text-base font-semibold">Windmill Dashboard HTML</h3>
-              <p className="mb-1">
-                No frameworks, no dependencies. Pure, flexible web development.
-              </p>
+            <div className="flex flex-col justify-between p-2 text-sm text-gray-700 rounded-lg shadow-xs">
+              <div>
+                <img
+                  className="mb-4 rounded-md shadow-xs"
+                  src="img/projects/windmill-dashboard-html.png"
+                  alt=""
+                />
+                <h3 className="mb-2 text-base font-semibold">Windmill Dashboard HTML</h3>
+                <p className="mb-1">
+                  No frameworks, no dependencies. Pure, flexible web development.
+                </p>
+              </div>
               <a className="underline" href="https://windmillui.com/dashboard-html">
                 Visit
               </a>
             </div>
-            <div className="p-2 text-sm text-gray-700 rounded-lg shadow-xs">
-              <img
-                className="mb-4 rounded-md shadow-xs"
-                src="img/projects/multi-theme.png"
-                alt=""
-              />
-              <h3 className="mb-2 text-base font-semibold">Tailwind Multi Theme</h3>
-              <p className="mb-1">
-                Tailwind CSS plugin for fast development of dark mode (and more) themes.
-              </p>
+            <div className="flex flex-col justify-between p-2 text-sm text-gray-700 rounded-lg shadow-xs">
+              <div>
+                <img
+                  className="mb-4 rounded-md shadow-xs"
+                  src="img/projects/multi-theme.png"
+                  alt=""
+                />
+                <h3 className="mb-2 text-base font-semibold">Tailwind Multi Theme</h3>
+                <p className="mb-1">
+                  Tailwind CSS plugin for fast development of dark mode (and more) themes.
+                </p>
+              </div>
               <a className="underline" href="https://tailwindcss-multi-theme.now.sh/">
                 Visit
               </a>
             </div>
-            <div className="p-2 text-sm text-gray-700 rounded-lg shadow-xs">
-              <img className="mb-4 rounded-md shadow-xs" src="img/projects/sharect.png" alt="" />
-              <h3 className="mb-2 text-base font-semibold">Sharect</h3>
-              <p className="mb-1">
-                Let users share their text selections to social networks, in desktop browsers.
-              </p>
+            <div className="flex flex-col justify-between p-2 text-sm text-gray-700 rounded-lg shadow-xs">
+              <div>
+                <img className="mb-4 rounded-md shadow-xs" src="img/projects/sharect.png" alt="" />
+                <h3 className="mb-2 text-base font-semibold">Sharect</h3>
+                <p className="mb-1">
+                  Let users share their text selections to social networks, in desktop browsers.
+                </p>
+              </div>
               <a className="underline" href="https://estevanmaito.github.io/sharect">
                 Visit
               </a>
@@ -156,8 +166,8 @@ export default function Home() {
           </div>
         </section>
 
-        <section>
-          <h2 className="mb-4 text-2xl font-bold text-gray-800" id="case">
+        <section className="mb-16">
+          <h2 className="mb-6 text-2xl font-bold text-gray-800" id="case">
             Case study
           </h2>
           <div className="grid grid-cols-2 gap-16 text-sm text-gray-700">
