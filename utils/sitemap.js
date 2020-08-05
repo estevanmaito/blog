@@ -8,6 +8,7 @@ sitemap({
   pagesDirectory: __dirname + '\\..\\pages',
   ignoreIndexFiles: true,
   targetDirectory: targetDirectory,
+  ignoredPaths: ['tags'],
   pagesConfig: {
     '/blog': {
       priority: '1',
