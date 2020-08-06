@@ -52,7 +52,8 @@ export default function Post(frontMatter) {
         <Nav />
 
         <div className="grid max-w-2xl grid-cols-9 px-4 mx-auto my-10 xs:px-8 lg:max-w-5xl">
-          <main className="col-span-12 prose lg:col-span-6 max-w-none">{content}</main>
+          <main className="col-span-9 prose lg:col-span-6 max-w-none">{content}</main>
+          {/* Desktop sidebar */}
           <aside className="hidden lg:col-start-8 lg:col-span-2 lg:block">
             <div className="">
               <img
@@ -113,6 +114,71 @@ export default function Post(frontMatter) {
             <div className="mt-8">
               <p className="mb-1 font-medium text-gray-900">Published</p>
               <span className="text-sm text-gray-700">{formatDate(frontMatter.datePublished)}</span>
+            </div>
+          </aside>
+          {/* Mobile "sidebar" - actually footer */}
+          <aside className="col-span-9 mt-6 lg:hidden">
+            <div className="flex mb-8 space-x-8">
+              <div>
+                <p className="mb-1 font-medium text-gray-700">Tags</p>
+                <div className="space-x-4 text-gray-700">
+                  {frontMatter.tags.map((tag) => (
+                    <TagPill tag={tag} key={tag} />
+                  ))}
+                </div>
+              </div>
+              <div>
+                <p className="mb-1 font-medium text-gray-700">Published</p>
+                <span className="text-sm text-gray-700">
+                  {formatDate(frontMatter.datePublished)}
+                </span>
+              </div>
+            </div>
+
+            <div className="flex items-center">
+              <img
+                className="object-cover w-24 h-24 mr-4 rounded-full"
+                src="/img/me-144.png"
+                alt=""
+              />
+
+              <p className="max-w-xs text-sm text-gray-800">
+                I'm{' '}
+                <Link href="/about">
+                  <a className="underline">Estevan Maito</a>
+                </Link>
+                , a full-stack developer, creating open source and passionate about design.
+              </p>
+
+              <ul className="space-y-2 text-sm">
+                <li>
+                  <a
+                    className="flex items-center hover:font-semibold"
+                    href="https://twitter.com/estevanmaito"
+                  >
+                    <TwitterIcon className="w-3 h-3 mr-2 text-gray-700" />
+                    <span className="text-gray-800">Follow me</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="flex items-center hover:font-semibold"
+                    href="https://github.com/estevanmaito"
+                  >
+                    <GithubIcon className="w-3 h-3 mr-2 text-gray-700" />
+                    <span className="text-gray-800">View projects</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="flex items-center hover:font-semibold"
+                    href="https://estevanmaito.substack.com/subscribe"
+                  >
+                    <NewsletterIcon className="w-3 h-3 mr-2 text-gray-700" />
+                    <span className="text-gray-800">Join newsletter</span>
+                  </a>
+                </li>
+              </ul>
             </div>
           </aside>
         </div>
