@@ -37,8 +37,8 @@ export default function Home() {
       </SEO>
       <Nav />
 
-      <header className="grid max-w-2xl grid-cols-2 gap-16 px-4 py-16 mx-auto text-gray-800 xs:px-8 lg:max-w-5xl">
-        <div className="flex flex-col justify-center">
+      <header className="grid max-w-2xl gap-8 px-4 py-16 mx-auto text-gray-800 md:gap-16 md:grid-cols-2 xs:px-8 lg:max-w-5xl">
+        <div className="flex flex-col justify-center row-start-2 md:row-start-auto">
           <h1 className="text-4xl font-extrabold tracking-tight">I'm Estevan Maito</h1>
           <p className="text-lg">
             Full-stack developer, creating open source and passionate about design.
@@ -77,8 +77,8 @@ export default function Home() {
             </li>
           </ul>
         </div>
-        <div className="flex items-center justify-end">
-          <img className="max-w-sm rounded-xl" src="img/me.png" alt="" />
+        <div className="flex items-center row-start-1 md:justify-end md:row-start-auto">
+          <img className="w-32 md:w-full md:max-w-sm rounded-xl" src="img/me.png" alt="" />
         </div>
       </header>
 
@@ -88,7 +88,7 @@ export default function Home() {
             Projects
           </h2>
 
-          <div className="grid grid-cols-3 gap-16">
+          <div className="grid gap-8 md:gap-16 sm:grid-cols-2 lg:grid-cols-3">
             <div className="flex flex-col justify-between p-2 text-sm text-gray-700 rounded-lg shadow-xs">
               <div>
                 <img
@@ -170,7 +170,7 @@ export default function Home() {
           <h2 className="mb-6 text-2xl font-bold text-gray-800" id="case">
             Case study
           </h2>
-          <div className="grid grid-cols-2 gap-16 text-sm text-gray-700">
+          <div className="grid gap-16 text-sm text-gray-700 sm:grid-cols-2">
             <img className="rounded-xl" src="img/projects/unna.png" alt="" />
             <div className="flex items-center">
               <div>
