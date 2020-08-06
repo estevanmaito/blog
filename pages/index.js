@@ -39,7 +39,9 @@ export default function Home() {
 
       <header className="grid max-w-2xl gap-8 px-4 py-16 mx-auto text-gray-800 md:gap-16 md:grid-cols-2 xs:px-8 lg:max-w-5xl">
         <div className="flex flex-col justify-center row-start-2 md:row-start-auto">
-          <h1 className="text-4xl font-extrabold tracking-tight">I'm Estevan Maito</h1>
+          <h1 className="mb-2 text-4xl font-extrabold leading-tight tracking-tight">
+            I'm Estevan Maito
+          </h1>
           <p className="text-lg">
             Full-stack developer, creating open source and passionate about design.
           </p>
