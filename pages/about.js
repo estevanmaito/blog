@@ -63,6 +63,10 @@ export default function About() {
           <a href="https://vimeo.com/estevanmaito">CSS framework</a> with 90 copies sold. All of it
           is available in Portuguese, and the last two are not available for purchase anymore.
         </p>
+        <p>
+          You can find my recent open source projects and a case study of a project I finished in
+          July/2020 below.
+        </p>
 
         <p className="space-x-4">
           <a href="https://github.com/estevanmaito">Github</a>
@@ -122,6 +126,7 @@ export default function About() {
           <li>React Context API over Redux</li>
           <li>Next.js</li>
           <li>Tailwind CSS (although I've worked with Bootstrap for 5 years)</li>
+          <li>Alpine.js</li>
           <li>Node.js</li>
           <li>Mongo DB</li>
           <li>NVDA (screen reader)</li>
@@ -155,6 +160,9 @@ export default function About() {
             5 years working with server-side JavaScript (<strong>Node</strong> +{' '}
             <strong>Express</strong>), <strong>REST</strong> APIs and <strong>Mongo DB</strong>
             (Mongoose)
+          </li>
+          <li>
+            Recent experience with <strong>Alpine.js</strong>
           </li>
           <li>
             <strong>Tailwind CSS</strong> or Bootstrap
