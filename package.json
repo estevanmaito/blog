@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "prebuild": "node utils/social-image.js && node utils/sitemap.js",
+    "predeploy": "node utils/social-image.js && node utils/sitemap.js",
     "build": "next build",
     "start": "next start"
   },
