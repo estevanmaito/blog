@@ -1,0 +1,7 @@
+{
+  "version": 2,
+  "rewrites": [
+    { "source": "/pomodoro", "destination": "https://pomodoro-murex.vercel.app" },
+    { "source": "/*", "destination": "/" }
+  ]
+}
