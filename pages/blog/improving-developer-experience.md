@@ -1,12 +1,12 @@
 ---
 layout: 'post'
-title: 'Improvig developer experience'
+title: 'Improving developer experience'
 description: 'Sometimes the best way to deliver a good experience to our users, is to take care of our own developer experience.'
 datePublished: '2020-06-22T12:00Z'
 tags: [dev]
 ---
 
-# Improvig developer experience
+# Improving developer experience
 
 For the past months, I've been really interested in accessibility, mostly in the sense of disabled people, which I think it's what most people do.
 
