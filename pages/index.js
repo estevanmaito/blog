@@ -80,7 +80,11 @@ export default function Home() {
           </ul>
         </div>
         <div className="flex items-center row-start-1 md:justify-end md:row-start-auto">
-          <img className="w-32 md:w-full md:max-w-sm rounded-xl" src="img/me.png" alt="" />
+          <img
+            className="w-32 md:w-full md:max-w-sm rounded-xl"
+            src="img/me.png"
+            alt="Estevan's profile picture"
+          />
         </div>
       </header>
 
