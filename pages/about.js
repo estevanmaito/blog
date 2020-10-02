@@ -43,45 +43,73 @@ export default function About() {
       <main className="max-w-2xl px-4 mx-auto my-10 prose xs:px-8 lg:max-w-3xl">
         <h1>About me</h1>
         <p>
-          I'm Estevan Maito, full stack developer with 6 years of experience currently looking for
-          new projects. I'm currently living in Brazil (GMT-3). I changed careers in 2013, going
-          from International Business to self-taught developer.
+          Hi, my name is Estevan. I'm a Brazilian full stack developer working as a freelancer and
+          creating open source software.
         </p>
         <p>
-          In 2014 I started to work as a freelancer and in 2015 decided to join an agency, where I
-          left at the end of that year. There I worked mostly with frontend development, Angular,
-          .Net, C#, PHP, Bootstrap, SASS. I've not touched most of these technologies since then,
-          and you can compare it to my <a href="#stack">favorite stack now</a>.
+          I started coding for the web at the age of 13, with Microsoft Frontpage. In 6+ years of
+          technical career (after changing from International Business) I have worked in a wide
+          range of domains such as unique website experiences at agencies, e-learning platforms, and
+          design. It all sums up helping me talk with everybody inside a project, from design to
+          backend.
         </p>
         <p>
-          In the following years, I've teached web development on{' '}
-          <a href="https://youtube.com/estevanmaito">YouTube</a>, wrote a book on{' '}
-          <a href="https://web.archive.org/web/20180103082105/http://www.aprendahtmlecss.com.br/">
-            HTML & CSS
-          </a>{' '}
-          with 700 copies sold, and created a course on creating a{' '}
-          <a href="https://vimeo.com/estevanmaito">CSS framework</a> with 90 copies sold. All of it
-          is available in Portuguese, and the last two are not available for purchase anymore.
+          In my spare time, I love teaching (14k{' '}
+          <a href="https://youtube.com/estevanmaito">YouTube</a> subs, 2 books written and blogging)
+          and contributing to <a href="https://github.com/estevanmaito">open source</a>.
         </p>
+        <div>
+          <p>Find me online:</p>
+          <p className="space-x-4">
+            <a href="https://github.com/estevanmaito">Github</a>
+            <a href="https://twitter.com/estevanmaito">Twitter</a>
+            <span className="cursor-pointer" onClick={() => setEmailIsVisible(true)}>
+              Click to see email: {emailIsVisible && 'ejmaito@gmail.com'}
+            </span>
+          </p>
+        </div>
+
+        <h2>Work with me</h2>
+
         <p>
-          You can find my recent open source projects and a case study of a project I finished in
-          July/2020 below.
+          I'm highly motivated, good humoured, independent and a team-player. I also love sharing my
+          knowledge and try my best to document my experiences and help others.
         </p>
 
-        <p className="space-x-4">
-          <a href="https://github.com/estevanmaito">Github</a>
-          <a href="https://twitter.com/estevanmaito">Twitter</a>
-          <span className="cursor-pointer" onClick={() => setEmailIsVisible(true)}>
-            Click to see email: {emailIsVisible && 'ejmaito@gmail.com'}
-          </span>
-        </p>
+        <h3>I'm good at</h3>
+
+        <ul>
+          <li>
+            Coding
+            <ul>
+              <li>
+                Design systems and component libraries (
+                <a href="https://windmillui.com/react-ui">example</a>)
+              </li>
+              <li>Performance optimization/profiling</li>
+              <li>Documenting code</li>
+              <li>SEO</li>
+              <li>Accessibility</li>
+              <li>Learning new tech</li>
+            </ul>
+          </li>
+          <li>
+            Teaching
+            <ul>
+              <li>Through videos on JavaScript, NodeJS, HTML & CSS</li>
+              <li>
+                Writing <a href="/blog">blog</a> posts and books (<a href="/#books">check them</a>)
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="https://github.com/estevanmaito">Open source</a>
+          </li>
+        </ul>
 
         <h2>Open Source</h2>
 
-        <p>
-          Even though my whole career I tried to sabotage myself not keeping a record of my work,
-          GitHub kept track of it for me.
-        </p>
+        <p>Here you can find my latest contributions:</p>
         <ul>
           <li>
             <a href="https://windmillui.com">Windmill UI</a>: I'm very proud of the suite created
@@ -110,6 +138,12 @@ export default function About() {
             <a href="https://tailwindcss-multi-theme.now.sh/">Tailwind Multi Theme</a>: Tailwind CSS
             plugin for fast development of dark mode (and more) themes.
           </li>
+          <li>
+            <a href="https://github.com/romefrontend/rome/issues/839#issuecomment-672338554">
+              Rome Frontend
+            </a>
+            : Accessiblity audit and fixes.
+          </li>
         </ul>
 
         <h2 id="stack">Current preferred stack</h2>
@@ -123,9 +157,11 @@ export default function About() {
         </p>
         <ul>
           <li>React</li>
-          <li>React Context API over Redux</li>
+          <li>React Context API over Redux (worked with it in the past)</li>
+          <li>TypeScript</li>
+          <li>Jest</li>
           <li>Next.js</li>
-          <li>Tailwind CSS (although I've worked with Bootstrap for 5 years)</li>
+          <li>Tailwind CSS (also worked with Bootstrap/Sass for 5 years)</li>
           <li>Alpine.js</li>
           <li>Node.js</li>
           <li>Mongo DB</li>
@@ -144,7 +180,7 @@ export default function About() {
         </p>
 
         <ul>
-          <li>GMT-3 (1h less than New York)</li>
+          <li>EST timezone</li>
           <li>Fullstack developer with stronger frontend skills</li>
           <li>
             +3 years of <strong>React</strong> experience, worked with <strong>Redux</strong> in the
@@ -165,7 +201,7 @@ export default function About() {
             Recent experience with <strong>Alpine.js</strong>
           </li>
           <li>
-            <strong>Tailwind CSS</strong> or Bootstrap
+            <strong>Tailwind CSS</strong> (contributor and plugin creator) or Bootstrap
           </li>
           <li>
             Thinking about <strong>accessibility</strong> as a top priority in UX (I usually work
@@ -174,7 +210,7 @@ export default function About() {
           <li>Travis CI</li>
           <li>
             I've also worked in the past with: Vue, Styled Components, Gatsby, Redux, SQL Server,
-            Angular, Firebase
+            Angular, Firebase, C#, .NET
           </li>
           <li>
             Can communicate with <strong>designers</strong>

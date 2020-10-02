@@ -90,7 +90,7 @@ export default function Home() {
 
       <main className="max-w-2xl px-4 mx-auto my-10 xs:px-8 lg:max-w-5xl">
         <section className="mb-16">
-          <h2 className="mb-6 text-2xl font-bold text-gray-800" id="projects">
+          <h2 className="mb-6 text-2xl font-bold text-gray-800" id="books">
             Books
           </h2>
 
