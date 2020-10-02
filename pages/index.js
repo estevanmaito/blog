@@ -87,6 +87,52 @@ export default function Home() {
       <main className="max-w-2xl px-4 mx-auto my-10 xs:px-8 lg:max-w-5xl">
         <section className="mb-16">
           <h2 className="mb-6 text-2xl font-bold text-gray-800" id="projects">
+            Books
+          </h2>
+
+          <div className="grid gap-8 md:gap-16 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="flex flex-col justify-between p-2 text-sm text-gray-700 rounded-lg shadow-xs">
+              <div>
+                <div className="flex items-center justify-center w-full h-32 p-2 mb-4 rounded-md shadow-xs">
+                  <img className="h-full" src="img/cover-aprenda.png" alt="" />
+                </div>
+                <h3 className="mb-1 text-base font-semibold">Aprenda HTML & CSS (free - PT)</h3>
+                <p className="mb-1 text-xs text-gray-500">2016</p>
+                <p className="mb-1">
+                  Learn HTML & CSS from the ground up and create websites. Short chapters, tons of
+                  exercises.
+                </p>
+              </div>
+              <a className="underline" href="https://github.com/estevanmaito/aprenda-html-css/">
+                Read online
+              </a>
+            </div>
+
+            <div className="flex flex-col justify-between p-2 text-sm text-gray-700 rounded-lg shadow-xs">
+              <div>
+                <div className="flex items-center justify-center w-full h-32 p-2 mb-4 rounded-md shadow-xs">
+                  <img className="h-full" src="img/cover-learn.png" alt="" />
+                </div>
+                <h3 className="mb-1 text-base font-semibold">Learn HTML & CSS (free - EN)</h3>
+                <p className="mb-1 text-xs text-gray-500">
+                  <span className="px-1 py-px font-semibold tracking-wide text-white bg-black rounded">
+                    NEW
+                  </span>{' '}
+                  - Work In Progress - 2021
+                </p>
+                <p className="mb-1">
+                  Translated and updated version. Learn HTML & CSS from the ground up and create
+                  websites. Short chapters, tons of exercises.
+                </p>
+              </div>
+              <a className="underline" href="https://github.com/estevanmaito/learn-html-css/">
+                Read online
+              </a>
+            </div>
+          </div>
+        </section>
+        <section className="mb-16">
+          <h2 className="mb-6 text-2xl font-bold text-gray-800" id="projects">
             Projects
           </h2>
 
