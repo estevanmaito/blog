@@ -80,11 +80,77 @@ export default function Home() {
           </ul>
         </div>
         <div className="flex items-center row-start-1 md:justify-end md:row-start-auto">
-          <img className="w-32 md:w-full md:max-w-sm rounded-xl" src="img/me.png" alt="" />
+          <img
+            className="w-32 md:w-full md:max-w-sm rounded-xl"
+            src="img/me.png"
+            alt="Estevan's profile picture"
+          />
         </div>
       </header>
 
       <main className="max-w-2xl px-4 mx-auto my-10 xs:px-8 lg:max-w-5xl">
+        <section className="mb-16">
+          <h2 className="mb-6 text-2xl font-bold text-gray-800" id="books">
+            Books
+          </h2>
+
+          <div className="grid gap-8 md:gap-16 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="flex flex-col justify-between p-2 text-sm text-gray-700 rounded-lg shadow-xs">
+              <div>
+                <div className="flex items-center justify-center w-full h-32 p-2 mb-4 rounded-md shadow-xs">
+                  <img
+                    className="h-full"
+                    src="img/cover-aprenda.png"
+                    alt=""
+                    aria-describedby="book-pt"
+                    loading="lazy"
+                  />
+                </div>
+                <h3 className="mb-1 text-base font-semibold" id="book-pt">
+                  Aprenda HTML & CSS (free - PT)
+                </h3>
+                <p className="mb-1 text-xs text-gray-500">2016</p>
+                <p className="mb-1">
+                  Learn HTML & CSS from the ground up and create websites. Short chapters, tons of
+                  exercises.
+                </p>
+              </div>
+              <a className="underline" href="https://github.com/estevanmaito/aprenda-html-css/">
+                Read online
+              </a>
+            </div>
+
+            <div className="flex flex-col justify-between p-2 text-sm text-gray-700 rounded-lg shadow-xs">
+              <div>
+                <div className="flex items-center justify-center w-full h-32 p-2 mb-4 rounded-md shadow-xs">
+                  <img
+                    className="h-full"
+                    src="img/cover-learn.png"
+                    alt=""
+                    aria-describedby="book-en"
+                    loading="lazy"
+                  />
+                </div>
+                <h3 className="mb-1 text-base font-semibold" id="book-en">
+                  Learn HTML & CSS (free - EN)
+                </h3>
+                <p className="mb-1 text-xs text-gray-500">
+                  <span className="px-1 py-px font-semibold tracking-wide text-white bg-black rounded">
+                    NEW
+                  </span>{' '}
+                  - Work In Progress - 2021
+                </p>
+                <p className="mb-1">
+                  Translated and updated version. Learn HTML & CSS from the ground up and create
+                  websites. Short chapters, tons of exercises.
+                </p>
+              </div>
+              <a className="underline" href="https://github.com/estevanmaito/learn-html-css/">
+                Read online
+              </a>
+            </div>
+          </div>
+        </section>
         <section className="mb-16">
           <h2 className="mb-6 text-2xl font-bold text-gray-800" id="projects">
             Projects
@@ -97,8 +163,12 @@ export default function Home() {
                   className="mb-4 rounded-md shadow-xs"
                   src="img/projects/windmill-react-ui.png"
                   alt=""
+                  aria-describedby="project-windmill-react"
+                  loading="lazy"
                 />
-                <h3 className="mb-2 text-base font-semibold">Windmill React UI</h3>
+                <h3 className="mb-2 text-base font-semibold" id="project-windmill-react">
+                  Windmill React UI
+                </h3>
                 <p className="mb-1">
                   The component library for fast and accessible development of gorgeous interfaces.
                 </p>
@@ -113,8 +183,12 @@ export default function Home() {
                   className="mb-4 rounded-md shadow-xs"
                   src="img/projects/windmill-dashboard-react.png"
                   alt=""
+                  aria-describedby="project-dash-react"
+                  loading="lazy"
                 />
-                <h3 className="mb-2 text-base font-semibold">Windmill Dashboard React</h3>
+                <h3 className="mb-2 text-base font-semibold" id="project-dash-react">
+                  Windmill Dashboard React
+                </h3>
                 <p className="mb-1">Four 100 scores and PWA ready. Just connect your data.</p>
               </div>
               <a className="underline" href="https://windmillui.com/dashboard-react">
@@ -127,8 +201,12 @@ export default function Home() {
                   className="mb-4 rounded-md shadow-xs"
                   src="img/projects/windmill-dashboard-html.png"
                   alt=""
+                  aria-describedby="project-dash-html"
+                  loading="lazy"
                 />
-                <h3 className="mb-2 text-base font-semibold">Windmill Dashboard HTML</h3>
+                <h3 className="mb-2 text-base font-semibold" id="project-dash-html">
+                  Windmill Dashboard HTML
+                </h3>
                 <p className="mb-1">
                   No frameworks, no dependencies. Pure, flexible web development.
                 </p>
@@ -143,8 +221,12 @@ export default function Home() {
                   className="mb-4 rounded-md shadow-xs"
                   src="img/projects/multi-theme.png"
                   alt=""
+                  aria-describedby="project-theme"
+                  loading="lazy"
                 />
-                <h3 className="mb-2 text-base font-semibold">Tailwind Multi Theme</h3>
+                <h3 className="mb-2 text-base font-semibold" id="project-theme">
+                  Tailwind Multi Theme
+                </h3>
                 <p className="mb-1">
                   Tailwind CSS plugin for fast development of dark mode (and more) themes.
                 </p>
@@ -155,8 +237,17 @@ export default function Home() {
             </div>
             <div className="flex flex-col justify-between p-2 text-sm text-gray-700 rounded-lg shadow-xs">
               <div>
-                <img className="mb-4 rounded-md shadow-xs" src="img/projects/sharect.png" alt="" />
-                <h3 className="mb-2 text-base font-semibold">Sharect</h3>
+                <img
+                  className="mb-4 rounded-md shadow-xs"
+                  src="img/projects/sharect.png"
+                  alt=""
+                  aria-describedby="project-sharect"
+                  loading="lazy"
+                />
+
+                <h3 className="mb-2 text-base font-semibold" id="project-sharect">
+                  Sharect
+                </h3>
                 <p className="mb-1">
                   Let users share their text selections to social networks, in desktop browsers.
                 </p>
