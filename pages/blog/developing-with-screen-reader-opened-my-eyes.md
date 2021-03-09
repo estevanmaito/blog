@@ -18,7 +18,7 @@ With my keyboard I could find unreachable places in the UI, places where focus s
 
 ## Things I would never "see"
 
-I've created a search input without a label (yellow flag), but put a `placeholder` and gave `aria-label` a descriptive name. To make it even clearer that that input was a search field, I decided to put a search icon inside it, using SVG. I was beautiful and _everybody_ would understand what that field was about, right? Except for the fact that the screen reader was now reading my input AND the content of the SVG. It would be a mess you somebody was depending on screen reading to understand what was going on. The solution was a simple `aria-hidden="true"` in the SVG.
+I've created a search input without a label (yellow flag), but put a `placeholder` and gave `aria-label` a descriptive name. To make it even clearer that that input was a search field, I decided to put a search icon inside it, using SVG. It was beautiful and _everybody_ would understand what that field was about, right? Except for the fact that the screen reader was now reading my input AND the content of the SVG. It would be a mess you somebody was depending on screen reading to understand what was going on. The solution was a simple `aria-hidden="true"` in the SVG.
 
 A dead simple solution with a huge impact.
 
