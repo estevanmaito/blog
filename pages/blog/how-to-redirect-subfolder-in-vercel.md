@@ -23,7 +23,6 @@ Create a `vercel.json` file in your project root. This project should be the one
 
 ```json
 {
-  "version": 2,
   "rewrites": [
     { "source": "/pomodoro/:asset*", "destination": "https://pomodoro-murex.vercel.app/:asset*" },
     { "source": "/(.*)", "destination": "/" }
@@ -32,8 +31,6 @@ Create a `vercel.json` file in your project root. This project should be the one
 ```
 
 **TL;DR;** The first `source` points everything coming to `/pomodoro` to `https://pomodoro-murex.vercel.app`; `:asset*` can have any name, as long as it is present in both `source` and `destination` and is between `:<here you can put anything>*`. The second `source` just routes everything else to the current project's root.
-
-You can read about `version` [in the docs](https://vercel.com/docs/configuration#project/version) but long story short, use `2`.
 
 To better understand why I setup my rewrites the way I did, you may find useful to know my project structure (it's pretty simple, don't worry).
 
